@@ -67,7 +67,7 @@ class MultipleTypeaheadInput(SelectMultiple):
         for tag in data.getlist(name):
             try:
                 self.queryset.get(pk=tag)
-                value.append(tag.pk)
+                value.append(tag)
             except ValueError, self.queryset.model.DoesNotExist:
                 new_object = self.builder(tag)
                 value.append(new_object.pk)

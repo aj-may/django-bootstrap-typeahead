@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-bootstrap-typeahead",
-    version="1.0.1",
+    version="1.1.1",
     packages=find_packages(),
     install_requires=[
         'django>=1.6',
@@ -17,6 +17,7 @@ setup(
     package_data={
         'django_bootstrap_typeahead': [
             'static/js/*',
+            'static/css/*',
         ],
     },
 )
