@@ -1,0 +1,34 @@
+.tag-input-widget {
+	height: auto;
+}
+
+.tag-input-widget input {
+	border: none;
+	box-shadow: none;
+	outline: none;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	width: auto !important;
+	max-width: inherit;
+}
+
+.tag-input-widget input:focus {
+	border: none;
+	box-shadow: none;
+}
+
+.tag-input-widget .label {
+	margin: 0 5px 5px 0;
+	float: left;
+}
+
+.tag-input-widget .remove {
+	margin-left: 3px;
+	color: #fff;
+}
+
+.tag-input-widget .twitter-typeahead .tt-hint {
+	padding: 0;
+	height: 20px;
+}
