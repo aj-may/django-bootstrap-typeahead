@@ -27,7 +27,7 @@ class TypeaheadInput(Select):
             try:
                 self.queryset.get(pk=value)
                 return value
-            except ValueError, self.queryset.model.DoesNotExist:
+            except (ValueError, self.queryset.model.DoesNotExist):
                 new_object = self.builder(value)
                 return new_object.pk
         return value
@@ -68,7 +68,7 @@ class MultipleTypeaheadInput(SelectMultiple):
             try:
                 self.queryset.get(pk=tag)
                 value.append(tag)
-            except ValueError, self.queryset.model.DoesNotExist:
+            except (ValueError, self.queryset.model.DoesNotExist):
                 new_object = self.builder(tag)
                 value.append(new_object.pk)
         return value
