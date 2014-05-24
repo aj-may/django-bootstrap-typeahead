@@ -1,0 +1,10 @@
+-e git+https://github.com/django/django.git@95cf17244c086cb31eef86bdb0db57a0b5d05e38#egg=Django-dev
+coverage==3.7.1
+-e git://github.com/kennethreitz/dj-static.git@e79582483a976c76511244b3f236f7c68991e1ae#egg=dj_static-master
+pep8==1.5.6
+py==1.4.20
+pystache==0.5.4
+pytest==2.5.2
+static==1.0.2
+static3==0.5
+wsgiref==0.1.2

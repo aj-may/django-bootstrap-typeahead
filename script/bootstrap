@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pip install -r requirements.txt
+
+(cd test_project; python manage.py syncdb --noinput)

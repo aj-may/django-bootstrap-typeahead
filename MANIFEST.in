@@ -1,0 +1,2 @@
+recursive-include django_bootstrap_typeahead/static *
+include README.md

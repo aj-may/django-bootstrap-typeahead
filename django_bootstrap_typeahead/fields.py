@@ -13,7 +13,7 @@ class TypeaheadField(ModelChoiceField):
             queryset, required=required,
             widget=TypeaheadInput(queryset=queryset, builder=builder),
             label=label, initial=initial, help_text=help_text,
-            limit_choices_to=limit_choices_to, *args, **kwargs
+            limit_choices_to=limit_choices_to, empty_label='', *args, **kwargs
         )
 
 

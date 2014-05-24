@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pep8 --ignore=E128 .
+coverage run --source=django_bootstrap_markdown -m py.test
+coverage report
