@@ -1,8 +1,8 @@
 # Django Bootstrap Typeahead
 
-## Convert django model choice fields into typeahead fields.
+## Convert Django model choice fields into typeahead fields.
 
-Typeahead inputs built ontop of [Django](https://www.djangoproject.com/) and [Bootstrap](http://getbootstrap.com/).
+Typeahead inputs built on top of [Django](https://www.djangoproject.com/) and [Bootstrap](http://getbootstrap.com/).
 
 ![Example](http://thegoods.aj7may.com/content/images/2014/Feb/Screen_Shot_2014_02_05_at_5_27_56_PM.png)
 
