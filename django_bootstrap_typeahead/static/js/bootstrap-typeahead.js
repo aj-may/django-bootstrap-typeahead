@@ -3,14 +3,12 @@
  *  Django typeahead fields.
  *
  *  Made by A.J. May
- *  Under Creative Commons Share-alike
+ *  MIT License
  */
 ;(function ( $, window, document, undefined ) {
 
 	var pluginName = "djangoBootstrapTypeahead",
-	defaults = {
-		propertyName: "value"
-	};
+	defaults = {};
 
 	function Plugin ( element, options ) {
 		this.element = element;
@@ -22,6 +20,8 @@
 
 	Plugin.prototype = {
 		init: function () {
+			var self = this;
+
 			// Hide original select element
 			$( this.element ).hide();
 
@@ -63,7 +63,7 @@
 			// Preprocess Field on value change
 			if ( !this._is_multi_select() ) {
 				this.$typeahead.on('change', function () {
-					this._preprocess_field();
+					self._preprocess_field();
 				});
 			}
 
@@ -95,6 +95,7 @@
 		},
 		_preprocess_field: function () {
 			var $element = $( this.element ).val(null);
+			$element.children( 'option' ).removeAttr('selected');
 
 			if ( this._is_multi_select() ) {
 				this.$tags.children().each( function () {
