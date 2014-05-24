@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-bootstrap-typeahead",
-    version="1.1.4",
+    version="1.1.5",
     packages=find_packages(),
     author="A.J. May",
     author_email="aj7may@gmail.com",
@@ -11,4 +11,5 @@ setup(
     keywords="django bootstrap typeahead form widget input",
     url="http://thegoods.aj7may.com/django-bootstrap-typeahead",
     zip_safe=False,
+    include_package_data=True
 )
