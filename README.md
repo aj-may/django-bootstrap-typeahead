@@ -11,7 +11,7 @@ Typeahead inputs built on top of [Django](https://www.djangoproject.com/) and [B
 
 ### Usage:
 
-* Add `django-bootstrap-typeahead` to the installed apps of your Django Project
+* Add `django_bootstrap_typeahead` to the installed apps of your Django Project
 * create a form and use `TypeaheadField` instead of `ModelChoiceField`
   or `MultipleTypeaheadField` instead of `ModelMultipleChoiceField`
 * Be sure to include the form's required media in the template. _ie._ `{{ form.media }}`
